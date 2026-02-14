@@ -135,10 +135,11 @@ export default function ValentineCard() {
               {/* Center text */}
               <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                 <p
-                  className="text-pink-400 font-bold text-center"
+                  className="text-pink-400 text-center"
                   style={{
                     transform: "rotate(-2deg)",
-                    fontSize: "clamp(1rem, 5vw, 1.5rem)",
+                    fontSize: "clamp(1.5rem, 7vw, 2.5rem)",
+                    fontFamily: "var(--font-dancing)",
                   }}
                 >
                   Til deg ❤️
@@ -157,34 +158,75 @@ export default function ValentineCard() {
                 <ScatteredPhoto key={i} photo={photo} />
               ))}
 
-              {/* Message in center */}
-              <div className="absolute inset-0 flex flex-col items-center justify-center px-[12%] text-center pointer-events-none">
+              {/* Celebrate sticker – top right */}
+              <div
+                className="absolute"
+                style={{
+                  top: "-2%",
+                  right: "-2%",
+                  width: "35%",
+                  transform: "rotate(6deg)",
+                  filter:
+                    "drop-shadow(0 0 0 white) drop-shadow(0 0 0 white) drop-shadow(2px 0 0 white) drop-shadow(-2px 0 0 white) drop-shadow(0 2px 0 white) drop-shadow(0 -2px 0 white) drop-shadow(1px 1px 0 white) drop-shadow(-1px -1px 0 white) drop-shadow(1px -1px 0 white) drop-shadow(-1px 1px 0 white) drop-shadow(0 3px 6px rgba(0,0,0,0.15))",
+                }}
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/images/card/celebrate.png"
+                  alt=""
+                  className="w-full h-auto"
+                />
+              </div>
+
+              {/* Title – top left, beside celebrate sticker */}
+              <div
+                className="absolute pointer-events-none"
+                style={{ top: "5%", left: "5%", width: "55%" }}
+              >
                 <h2
-                  className="font-bold text-gray-800"
+                  className="text-gray-800"
                   style={{
-                    transform: "rotate(1deg)",
-                    fontSize: "clamp(1rem, 5vw, 1.5rem)",
+                    transform: "rotate(-2deg)",
+                    fontSize: "clamp(1.4rem, 7vw, 2.2rem)",
+                    lineHeight: 1.2,
+                    fontFamily: "var(--font-dancing)",
                   }}
                 >
                   Happy valentines 😘
                 </h2>
+              </div>
+
+              {/* Message – center */}
+              <div className="absolute inset-0 flex flex-col items-center justify-center px-[12%] text-center pointer-events-none">
                 <p
-                  className="text-gray-600 leading-relaxed mt-[3%]"
+                  className="text-gray-600 leading-relaxed"
                   style={{
                     transform: "rotate(-1deg)",
-                    fontSize: "clamp(0.7rem, 3.2vw, 1rem)",
+                    fontSize: "clamp(0.75rem, 3.5vw, 1.1rem)",
+                    fontFamily: "var(--font-lora)",
                   }}
                 >
-                  Roses are red, violets are blue,
+                  Ønsker min favoritt-kvinne en god valentinsdag!
                   <br />
-                  dette kortet er laget, bare for deg du.
+                  Jeg setter veldig stor pris på det, og at du holder ut med
+                  ragebaitingen min 😎
+                  <br />
+                  Ser frem til flere gode minner med deg ❤️
                 </p>
-                <p
-                  className="text-gray-400 italic mt-[4%]"
-                  style={{ fontSize: "clamp(0.6rem, 2.5vw, 0.8rem)" }}
-                >
-                  — Disco boy
-                </p>
+              </div>
+
+              {/* Signature – bottom right */}
+              <div
+                className="absolute pointer-events-none"
+                style={{
+                  bottom: "4%",
+                  right: "5%",
+                  fontSize: "clamp(0.7rem, 3vw, 1rem)",
+                  fontFamily: "var(--font-dancing)",
+                  transform: "rotate(2deg)",
+                }}
+              >
+                <p className="text-gray-500">— Disco boy</p>
               </div>
             </div>
           </div>
