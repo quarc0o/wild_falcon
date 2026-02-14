@@ -18,7 +18,7 @@ const lora = Lora({
 });
 
 export const metadata: Metadata = {
-  title: "Til Deg",
+  title: "Til Vilde ❤️",
   description: "Noe spesielt bare for deg",
 };
 
@@ -36,7 +36,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="no">
-      <body className={`${geistSans.variable} ${dancingScript.variable} ${lora.variable} antialiased`}>{children}</body>
+      <body
+        className={`${geistSans.variable} ${dancingScript.variable} ${lora.variable} antialiased`}
+      >
+        {children}
+      </body>
     </html>
   );
 }

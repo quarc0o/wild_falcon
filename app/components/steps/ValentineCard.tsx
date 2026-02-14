@@ -135,14 +135,14 @@ export default function ValentineCard() {
               {/* Center text */}
               <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                 <p
-                  className="text-pink-400 text-center"
+                  className="text-blue-400 text-center"
                   style={{
                     transform: "rotate(-2deg)",
                     fontSize: "clamp(1.5rem, 7vw, 2.5rem)",
                     fontFamily: "var(--font-dancing)",
                   }}
                 >
-                  Til deg ❤️
+                  Kjære Vilde
                 </p>
               </div>
             </div>
@@ -162,9 +162,9 @@ export default function ValentineCard() {
               <div
                 className="absolute"
                 style={{
-                  top: "-2%",
-                  right: "-2%",
-                  width: "35%",
+                  top: "-3%",
+                  right: "-3%",
+                  width: "45%",
                   transform: "rotate(6deg)",
                   filter:
                     "drop-shadow(0 0 0 white) drop-shadow(0 0 0 white) drop-shadow(2px 0 0 white) drop-shadow(-2px 0 0 white) drop-shadow(0 2px 0 white) drop-shadow(0 -2px 0 white) drop-shadow(1px 1px 0 white) drop-shadow(-1px -1px 0 white) drop-shadow(1px -1px 0 white) drop-shadow(-1px 1px 0 white) drop-shadow(0 3px 6px rgba(0,0,0,0.15))",
@@ -181,18 +181,23 @@ export default function ValentineCard() {
               {/* Title – top left, beside celebrate sticker */}
               <div
                 className="absolute pointer-events-none"
-                style={{ top: "5%", left: "5%", width: "55%" }}
+                style={{
+                  top: "12%",
+                  left: "0%",
+                  width: "100%",
+                  textAlign: "center",
+                }}
               >
                 <h2
                   className="text-gray-800"
                   style={{
                     transform: "rotate(-2deg)",
-                    fontSize: "clamp(1.4rem, 7vw, 2.2rem)",
+                    fontSize: "clamp(1.6rem, 8vw, 2.6rem)",
                     lineHeight: 1.2,
                     fontFamily: "var(--font-dancing)",
                   }}
                 >
-                  Happy valentines 😘
+                  Happy valentines
                 </h2>
               </div>
 
@@ -208,7 +213,7 @@ export default function ValentineCard() {
                 >
                   Ønsker min favoritt-kvinne en god valentinsdag!
                   <br />
-                  Jeg setter veldig stor pris på det, og at du holder ut med
+                  Jeg setter veldig stor pris på deg, og at du holder ut med
                   ragebaitingen min 😎
                   <br />
                   Ser frem til flere gode minner med deg ❤️
