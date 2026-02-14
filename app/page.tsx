@@ -18,18 +18,16 @@ export default function Home() {
 
             <div>
               <h1 className="text-2xl font-bold text-gray-900">
-                Happy Valentine&apos;s Day
+                Happy Valentine&apos;s
               </h1>
               <p className="text-sm text-gray-500 mt-2 leading-relaxed">
-                Noen har sendt deg et valentinkort!
-                <br />
-                Men først må du bevise at du fortjener det...
+                Her er et lite kort. Håper du liker det 🕺😈
               </p>
             </div>
 
             <button
               onClick={() => setShowCaptcha(true)}
-              className="w-full py-3 bg-linear-to-r from-pink-500 to-red-500 text-white font-semibold rounded-xl active:scale-95 transition-transform"
+              className="w-full py-3 bg-purple-600 text-white font-semibold rounded-xl active:scale-95 transition-transform"
             >
               Åpne kortet
             </button>

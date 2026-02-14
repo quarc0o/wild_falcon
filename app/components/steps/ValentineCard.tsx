@@ -7,18 +7,18 @@ const FRONT_PHOTOS = [
   {
     src: "/images/card/her_small.JPG",
     rotate: "-4deg",
-    top: "-3%",
-    left: "-2%",
-    w: "38%",
-    h: "32%",
+    top: "5%",
+    left: "3%",
+    w: "52%",
+    h: "45%",
   },
   {
     src: "/images/card/test.jpg",
-    rotate: "5deg",
-    top: "-2%",
-    right: "-3%",
-    w: "36%",
-    h: "34%",
+    rotate: "4deg",
+    top: "5%",
+    right: "3%",
+    w: "52%",
+    h: "45%",
   },
 ];
 
@@ -132,13 +132,13 @@ export default function ValentineCard() {
                 <ScatteredPhoto key={i} photo={photo} />
               ))}
 
-              {/* Center text */}
-              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+              {/* Text – bottom area */}
+              <div className="absolute left-0 right-0 bottom-[8%] flex justify-center pointer-events-none">
                 <p
                   className="text-blue-400 text-center"
                   style={{
                     transform: "rotate(-2deg)",
-                    fontSize: "clamp(1.5rem, 7vw, 2.5rem)",
+                    fontSize: "clamp(2rem, 9vw, 3rem)",
                     fontFamily: "var(--font-dancing)",
                   }}
                 >
@@ -241,7 +241,7 @@ export default function ValentineCard() {
       {/* Flip button – below the card */}
       <button
         onClick={() => setFlipped(!flipped)}
-        className="px-8 py-3 bg-linear-to-r from-pink-500 to-red-500 text-white font-semibold rounded-xl active:scale-95 transition-transform shadow-lg"
+        className="px-8 py-3 bg-purple-600 text-white font-semibold rounded-xl active:scale-95 transition-transform shadow-lg"
       >
         {flipped ? "Snu tilbake" : "Snu kortet"}
       </button>
